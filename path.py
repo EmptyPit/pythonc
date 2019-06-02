@@ -7,6 +7,7 @@ def way(path):
         for name in files:
             fullname = os.path.join(name, root)
             #a = fullname.rstrip('/n')
+            # always give meaningful names to variables and functions
             s = os.path.getsize(fullname)
             ww = name.rstrip('/n')
             kl = ['Kb', 'Mb', 'Gb', 'B']
@@ -22,6 +23,6 @@ def way(path):
             elif of > 1000000:
                 print(('{:35s} {:10} {}'.format(ww, of, kl[2])))
 
-
+# make script accept path from user
 way('/home/andrii/')
 
