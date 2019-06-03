@@ -21,4 +21,6 @@ def way(path):
             elif of > 1000000:
                 print(('{:35s} {:10} {}'.format(ww, of, kl[2])))
 
+# add argument "--no-size" that will disable file size printing
+# the argument should not be mandatory
 way(input('Enter the way'))
