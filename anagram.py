@@ -24,8 +24,8 @@ def anagram(s1, s2):
         for i in d1:
             if i in d2 and i in d1:
                 x = d2[i]
-                d2[i] -= d1[i]
-                d1[i] -= x
+                d2[i] = abs(d2[i] - d1[i])
+                d1[i] = abs(d1[i] - d1[i])
 
     tmp1 = [d1[i] for i in d1]
     tmp2 = [d2[i] for i in d2]
@@ -34,5 +34,5 @@ def anagram(s1, s2):
     return q
 
 
-m = anagram('anaconda', 'anaconca')
+m = anagram('mapa', 'mapaa')
 print(m)
