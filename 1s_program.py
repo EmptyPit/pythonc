@@ -57,6 +57,7 @@ class Login:
         else:
             return None
 
+#commit1
 
 if __name__ == "__main__":
     ch = input('If you want to register write 1 or if you want to sign in 2  ')
@@ -77,3 +78,6 @@ if __name__ == "__main__":
         print(lo.sign_in(lo.from_file_to_dict()))
     else:
         print('Wrong input, choose between 1 or 2')
+
+
+
